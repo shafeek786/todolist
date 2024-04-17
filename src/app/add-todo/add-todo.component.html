@@ -1,0 +1,9 @@
+<label for="task">Enter Task</label>
+<input
+  type="text"
+  id="task"
+  class="form-control"
+  [(ngModel)]="task">
+<button class="btn btn-primary" (click)="addNewTask(task)">Add Task</button>
+<app-todo-list></app-todo-list>
+

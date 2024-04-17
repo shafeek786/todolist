@@ -1,0 +1,19 @@
+<button class="btn btn-primary" (click)="clearAll()">Clear all</button>
+
+<div class="todo-container">
+   <div *ngFor="let list of todoList; let i = index" class="todo-item" [class.done]="list.completed">
+      <div class="row">
+         <div class="todo">
+            <div class="id">{{i}}</div>
+            <div>{{list.completed}}</div>
+            <div class="content">{{list.task }}</div>
+            <div>{{list.date  }}   {{list.date }}</div>
+               
+               <button (click)="completd(i)">completed</button>
+            <button class="delete" (click)="removiList(i)">Remove</button>
+         </div>
+       
+      </div>
+   </div>
+   
+</div>
